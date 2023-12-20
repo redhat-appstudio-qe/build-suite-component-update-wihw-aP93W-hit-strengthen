@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: multi-component-child-jlqf
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/build-e2e-iglp-tenant/build-suite-component-update-wihw/multi-component-child-jlqf@sha256:52ddd9f6111361b581d0995aef3a10392c6138baf4318641696a7ba77ab4f4b8
+        name: container-image
+        resources: {}
+status: {}
